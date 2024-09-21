@@ -47,7 +47,7 @@ def fuzz_api():
     for word in sys.stdin:
         word = word.strip()
         try:
-            res = requests.get(url=f"https://jsonplaceholder.typicode.com/posts{word}")
+            res = requests.get(url=f"https://jsonplaceholder.typicode.com/posts{word}")   #replace url with api you want to fuzz
             if res.status_code == 404:
                 print(f"404 Not Found: {word}")
                 continue
