@@ -1,4 +1,4 @@
-##### API Fuzzer (for KALI LINUX) ######
+# API Fuzzer (for KALI LINUX) 
 
 This project is a custom API fuzzer developed to test the robustness and security of RESTful APIs. The fuzzer sends various inputs to specified endpoints and analyzes the responses to identify potential vulnerabilities and unexpected behaviors.
 
@@ -9,19 +9,19 @@ Formatted Output: Prints JSON responses in a readable format.
 Endpoint Validation: Skips endpoints that return a 404 Not Found status.
 Clear Logging: Provides structured output for easy analysis.
 
-### Installation
+## Installation
 
-# Prerequisites
+### Prerequisites
 Python 3.x <br/>
 requests library
 
-# Steps
-# Clone the Repository:
+## Steps
+### Clone the Repository:
 ```
 git clone https://github.com/areeba-shafat/api-fuzzer.git
 cd api-fuzzer
 ```
-# Install Dependencies:
+### Install Dependencies:
 ```
 pip install requests
 ```
@@ -34,14 +34,14 @@ change the url in api-fuzzer.py with the api you want to fuzz.
    res = requests.get(url=f"https://your-api-url{word}")
   ```
 
-# Run the Script:
+### Run the Script:
 Use the following command to run the script with the input file:
 ```
 cat example.txt | python3 api-fuzzer.py
 ```
 
 
-### CODE OVERVIEW ###
+## CODE OVERVIEW ##
 api-fuzzer.py
 ```
 import requests
