@@ -12,7 +12,7 @@ Clear Logging: Provides structured output for easy analysis.
 ### Installation
 
 # Prerequisites
-Python 3.x
+Python 3.x <br/>
 requests library
 
 # Steps
@@ -28,7 +28,11 @@ pip install requests
 
 ### Usage
 Prepare Input Data:
-you can use your own set of data (for demonstration purposes example.txt is given)
+you can use your own set of data (for demonstration purposes example.txt is given) <br/>
+change the url in api-fuzzer.py with the api you want to fuzz.
+  ```
+   res = requests.get(url=f"https://your-api-url{word}")
+  ```
 
 # Run the Script:
 Use the following command to run the script with the input file:
